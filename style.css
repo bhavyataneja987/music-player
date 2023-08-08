@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@500&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #a6a9ab;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Spartan, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.playerContainer {
+  height: 511px;
+  width: 400px;
+  background-color: #eeedf3;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgb(0 0 0 / 30%);
+  overflow: hidden;
+  position: relative;
+}
+
+.imgContainer {
+  height: 300px;
+  width: 75%;
+  background-image: url(img/song1.jpg);
+  margin: 20px 51px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+/*.imgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgb(0, 0, 0, 0.5);
+}*/
+
+h1 {
+  text-align: center;
+  margin: 5% 0 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Progress */
+.progressContainer {
+  background: rgb(196, 184, 184);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background-color: #242323;
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+.fas {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+.fas:hover {
+  filter: brightness(80%);
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .playerContainer {
+    width: 95px;
+  }
+  .img-container {
+    left: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -5px;
+    left: 80px;
+  }
+  .player-controls i {
+    top: -15px;
+  }
+}
